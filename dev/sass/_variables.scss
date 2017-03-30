@@ -1,4 +1,33 @@
-$mainColor: #333;
-$fontFamily: Helvetica, Arial, sans-serif;
-$linkColor: #699;
-$bgColor: #f8f8f8;
+$fs: 'Fira Sans Extra Condensed', sans-serif;
+$os: 'Open Sans', sans-serif;
+.slick-slide, .slick-slide *{ outline: none !important; }
+.btn {
+	text-transform: uppercase;
+	display: block;
+	max-width: 176px;
+	text-align: center;
+	text-decoration: none;
+	height: 45px;
+	border: 1px solid transparent;
+	font: 300 15px/43px $fs;
+	letter-spacing: 0.075em;
+	transition: all .3s ease-in-out;
+}
+
+.btn--white {
+	border-color: #fff;
+	color: #fff;
+	&:hover {
+		background: #fff;
+		color: #000;
+	}
+}
+
+.btn--gray {
+	border-color: #a28d7c;
+	color: #806f61;
+	&:hover {
+		background: #a28d7c;
+		color: #fff;
+	}
+}

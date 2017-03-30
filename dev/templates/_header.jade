@@ -1,4 +1,30 @@
 block header
 
 	header.site-header
-		h1 Blank template for frontend developers
+		.container.cf
+			a.logo(href="/")
+				img(src="img/logo.png", alt="")
+			ul.main-menu
+				li
+					a(href="#") Каталог
+				li
+					a(href="#") О компании
+				li
+					a(href="#") Блог
+				li
+					a(href="#") Контакты
+				li
+					a(href="#") Партнёрам
+				li.lang
+					select
+						option(value="1") Ру
+						option(value="1") En
+			.tel-side
+				a.tel(href="tel:+7 (977) 857-81-15") +7 (977) 857-81-15
+				ul.tel-side__social
+					li.vk(style="background-image: url(img/vk-ico.png)")
+						a(href="#")
+					li.fb(style="background-image: url(img/fb-ico.png)")
+						a(href="#")
+					li.inst(style="background-image: url(img/inst-ico.png)")
+						a(href="#")

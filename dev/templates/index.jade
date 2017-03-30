@@ -1,16 +1,398 @@
 extends _layout
 block content
 	main.main-content
-		.sprite-example
-			h2.heading Sprite example
-			i.facebook-logo__icon
-			i.google-plus-logo__icon
-			i.instagram-logo__icon
-			i.twitter-logo__icon
-			i.youtube-logo__icon
-		.author-git
-			h2 Github link
-			a(href="https://github.com/narek-t/gulp-jade-sass" target="_blank") https://github.com/narek-t/gulp-jade-sass
+		.top-block
+			a.to-bottom.to-anchor(href="#tabs")
+			.top-block__inner.container
+				img(src="img/big-logo.png", alt="")
+				h1 МЕБЕЛЬ ИЗ РУК МАСТЕРА
+				p.description Сочетание традиционных и современных материалов и технологий, творческий подход и хороший вкус создают великолепные изделия способные удивлять даже искушенных
+				a.give-order.btn.btn--white(href="#") Оставить заявку
+		.tabs-block#tabs
+			.container
+				.tabs-block__inner
+					.tabs-block__item.active
+						.img-wrap
+							img(src="img/tab1.png", alt="")
+						span.heading Спальня
+					.tabs-block__item
+						.img-wrap
+							img(src="img/tab2.png", alt="")
+						span.heading Спальня
+					.tabs-block__item
+						.img-wrap
+							img(src="img/tab3.png", alt="")
+						span.heading Спальня
+					.tabs-block__item
+						.img-wrap
+							img(src="img/tab4.png", alt="")
+						span.heading Спальня
+					.tabs-block__item
+						.img-wrap
+							img(src="img/tab5.png", alt="")
+						span.heading Спальня
+					.tabs-block__item
+						.img-wrap
+							img(src="img/tab6.png", alt="")
+						span.heading Спальня
+		.tabbed-content
+			.large-container
+				.tabbed__slider
+					.tabbed__slider-item.active
+						.sl-prev.sl-arr
+						.sl-next.sl-arr
+						.tabbed__slider-inner
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing orem ipsum dolor sit amet, conse ctetur adipisi elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt
+					.tabbed__slider-item
+						.sl-prev.sl-arr
+						.sl-next.sl-arr
+						.tabbed__slider-inner
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing orem ipsum dolor sit amet, conse ctetur adipisi elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt
+					.tabbed__slider-item
+						.sl-prev.sl-arr
+						.sl-next.sl-arr
+						.tabbed__slider-inner
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing orem ipsum dolor sit amet, conse ctetur adipisi elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt
+					.tabbed__slider-item
+						.sl-prev.sl-arr
+						.sl-next.sl-arr
+						.tabbed__slider-inner
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing orem ipsum dolor sit amet, conse ctetur adipisi elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt
+					.tabbed__slider-item
+						.sl-prev.sl-arr
+						.sl-next.sl-arr
+						.tabbed__slider-inner
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing orem ipsum dolor sit amet, conse ctetur adipisi elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt
+					.tabbed__slider-item
+						.sl-prev.sl-arr
+						.sl-next.sl-arr
+						.tabbed__slider-inner
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing orem ipsum dolor sit amet, conse ctetur adipisi elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt
+
+
+				a.btn.btn--gray.aligned-center(href="#") Весь каталог
+			.top-positions
+				.large-container
+					.l-prev.sl-prev.sl-arr
+					.l-next.sl-next.sl-arr
+					.top-positions__slider
+						.top-positions__inner
+							.top-positions__col
+								img(src="img/top-pos1.png", alt="")
+							.top-positions__col
+								.item-cart-descr
+									h2.heading Стелаж Lorem ipsum
+									.tags
+										span.tags__item  морилка, 
+										span.tags__item  канадский клён, 
+										span.tags__item  лак
+									p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+									a.btn.btn--gray(href="#") подробнее
+						.top-positions__inner
+							.top-positions__col
+								img(src="img/top-pos1.png", alt="")
+							.top-positions__col
+								.item-cart-descr
+									h2.heading Стелаж Lorem ipsum
+									.tags
+										span.tags__item  морилка, 
+										span.tags__item  канадский клён, 
+										span.tags__item  лак
+									p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+									a.btn.btn--gray(href="#") подробнее
+						.top-positions__inner
+							.top-positions__col
+								img(src="img/top-pos1.png", alt="")
+							.top-positions__col
+								.item-cart-descr
+									h2.heading Стелаж Lorem ipsum
+									.tags
+										span.tags__item  морилка, 
+										span.tags__item  канадский клён, 
+										span.tags__item  лак
+									p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+									a.btn.btn--gray(href="#") подробнее
+			.index-positions
+				.index-positions__item
+					.index-positions__img(style="background-image: url(img/index1.jpg)")
+					.container.cf
+						.index-positions__col
+							.item-cart-descr
+								h2.heading Стелаж Lorem ipsum
+								.tags
+									span.tags__item  морилка, 
+									span.tags__item  канадский клён, 
+									span.tags__item  лак
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+								a.btn.btn--gray(href="#") подробнее
+				.index-positions__item
+					.index-positions__img(style="background-image: url(img/index2.jpg)")
+					.container.cf
+						.index-positions__col
+							.item-cart-descr
+								h2.heading Стелаж Lorem ipsum
+								.tags
+									span.tags__item  морилка, 
+									span.tags__item  канадский клён, 
+									span.tags__item  лак
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+								a.btn.btn--gray(href="#") подробнее
+				.index-positions__item
+					.index-positions__img(style="background-image: url(img/index3.jpg)")
+					.container.cf
+						.index-positions__col
+							.item-cart-descr
+								h2.heading Стелаж Lorem ipsum
+								.tags
+									span.tags__item  морилка, 
+									span.tags__item  канадский клён, 
+									span.tags__item  лак
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+								a.btn.btn--gray(href="#") подробнее
+			.popular-items
+				.container
+					h2.simple-heading Популярные товары
+				.large-container
+					.popular__slider-item
+						.sl-prev.sl-arr
+						.sl-next.sl-arr
+						.tabbed__slider-inner
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing orem ipsum dolor sit amet, conse ctetur adipisi elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm2.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+							.small-block.fourth-block
+								a(href="#")
+									span.img-wrap(style="background-image: url(img/sm1.jpg)")
+									span.heading Стол Lorem ipsum
+									span.subheading lorem ipsum dolor 
+									span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt
+			.contacts-block.cf
+				.container
+					h2.simple-heading Мебель на заказ, по вашему эскизу
+					p.subheading Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+					.contacts-block__form
+						form
+							.contacts-block__row
+								span
+									input.simple-input(type="text" placeholder="Имя")
+								span
+									input.simple-input(type="tel" placeholder="Телефон")
+								span
+									input.simple-input(type="email" placeholder="Email")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
