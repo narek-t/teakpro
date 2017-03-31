@@ -1,0 +1,68 @@
+extends _layout
+block content
+	main.main-content
+		.page-wrap
+			.container.cf
+				h1.page-title О компании
+				aside.sidebar
+					p.aside-title Каталог
+					ul
+						li
+							a(href="#") Спальня
+						li
+							a(href="#") Гостиная
+						li
+							a(href="#") Столовая
+						li
+							a(href="#") Кабинет
+						li
+							a(href="#") Ванная
+						li
+							a(href="#") Веранда
+					p.aside-title Популярные товары
+					.small-block
+						a(href="#")
+							span.img-wrap(style="background-image: url(img/sm2.jpg)")
+							span.heading Стол Lorem ipsum
+							span.subheading lorem ipsum dolor 
+							span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt
+					.small-block
+						a(href="#")
+							span.img-wrap(style="background-image: url(img/sm2.jpg)")
+							span.heading Стол Lorem ipsum
+							span.subheading lorem ipsum dolor 
+							span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+				.content
+					.single__content
+						img(src="img/partners-img.jpg", alt="")
+						p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+						p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+						.partners-form
+							p.partners-form__title Стать партнёром
+							p.partners-form__text Хотите сотрудничать с нами? Оставьте заявку и мы свяжемся с вами в ближайшее время.
+							form
+								.partners-block__row
+									.inp-wrap
+										input.simple-input(type="text" placeholder="Имя")
+									.inp-wrap
+										input.simple-input(type="tel" placeholder="Телефон")
+									.inp-wrap
+										input.simple-input(type="email" placeholder="Email")
+								span
+									textarea(placeholder="Комментарий")
+								input.btn.btn--gray(type="submit" value="Отправить")
+
+
+
+
+
+
+
+
+
+
+
+
+
+block inlineScripts

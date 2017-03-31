@@ -1,5 +1,10 @@
+// cheesecakebeluga
+// z#Wg@kA=sPSq
 $fs: 'Fira Sans Extra Condensed', sans-serif;
 $os: 'Open Sans', sans-serif;
+.aligned-center {
+	margin: auto;
+}
 .slick-slide, .slick-slide *{ outline: none !important; }
 .btn {
 	text-transform: uppercase;
@@ -12,6 +17,8 @@ $os: 'Open Sans', sans-serif;
 	font: 300 15px/43px $fs;
 	letter-spacing: 0.075em;
 	transition: all .3s ease-in-out;
+	cursor: pointer;
+	width: 100%;
 }
 
 .btn--white {
@@ -26,6 +33,7 @@ $os: 'Open Sans', sans-serif;
 .btn--gray {
 	border-color: #a28d7c;
 	color: #806f61;
+	background: transparent;
 	&:hover {
 		background: #a28d7c;
 		color: #fff;

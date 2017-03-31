@@ -240,7 +240,14 @@
                   <div class="contacts-block__row"><span>
                       <input type="text" placeholder="Имя" class="simple-input"/></span><span>
                       <input type="tel" placeholder="Телефон" class="simple-input"/></span><span>
-                      <input type="email" placeholder="Email" class="simple-input"/></span></div>
+                      <input type="email" placeholder="Email" class="simple-input"/></span></div><span>
+                    <textarea placeholder="Комментарий"></textarea></span>
+                  <div class="file-wrap">
+                    <label>прикрепить эскиз
+                      <input type="file" class="file-inp"/>
+                    </label>
+                  </div>
+                  <input type="submit" value="Отправить" class="aligned-center btn btn--gray"/>
                 </form>
               </div>
             </div>
@@ -248,7 +255,24 @@
         </div>
       </main>
     </div>
-    <footer class="site-footer"></footer>
+    <footer class="site-footer">
+      <div class="site-footer__top">
+        <div class="container cf"><a href="#" class="footer-logo"><img src="img/footer-logo.png" alt=""/></a>
+          <p class="footer-loc footer-inf">Россия, г. Люберцы, ул Красная 1, Литера Ц.</p><a href="tel:+7 (977) 857-81-15" class="footer-tel footer-inf">+7 (977) 857-81-15</a><a href="mailto:pro@teak.pro" class="footer-email footer-inf">pro@teak.pro</a>
+          <ul class="tel-side__social">
+            <li style="background-image: url(img/footer-vk-ico.png)" class="vk"><a href="#"></a></li>
+            <li style="background-image: url(img/footer-fb-ico.png)" class="fb"><a href="#"></a></li>
+            <li style="background-image: url(img/footer-inst-ico.png)" class="inst"><a href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container cf">
+          <p class="copyright-text">© 2017 TeakPro. Все права защищены</p>
+          <p class="madeby">Разработка сайта:  <a href="belugalab.ru" target="_blank">Beluga Labs</a></p>
+        </div>
+      </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/lib/lib.min.js"></script>
     <script src="js/main.min.js"></script>
