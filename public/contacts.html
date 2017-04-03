@@ -40,28 +40,21 @@
         <div class="page-wrap">
           <div class="container cf">
             <h1 class="page-title">О компании</h1>
-            <aside class="sidebar">
-              <p class="aside-title">Каталог</p>
-              <ul>
-                <li><a href="#">Спальня</a></li>
-                <li><a href="#">Гостиная</a></li>
-                <li><a href="#">Столовая</a></li>
-                <li><a href="#">Кабинет</a></li>
-                <li><a href="#">Ванная</a></li>
-                <li><a href="#">Веранда</a></li>
-              </ul>
-              <p class="aside-title">Популярные товары</p>
-              <div class="small-block"><a href="#"><span style="background-image: url(img/sm2.jpg)" class="img-wrap"></span><span class="heading">Стол Lorem ipsum</span><span class="subheading">lorem ipsum dolor </span><span class="small-text">Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt</span></a></div>
-              <div class="small-block"><a href="#"><span style="background-image: url(img/sm2.jpg)" class="img-wrap"></span><span class="heading">Стол Lorem ipsum</span><span class="subheading">lorem ipsum dolor </span><span class="small-text">Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt </span></a></div>
-            </aside>
-            <div class="content">
-              <div class="single__content"><img src="img/partners-img.jpg" alt=""/>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            <div class="contacts-page cf">
+              <div class="contacts-page__lcol">
+                <p class="partners-form__title">Адрес:</p>
+                <ul class="contacts-page__list">
+                  <li class="loc">Россия, г. Люберцы, ул., Красная, 1, лит. Ц, Ц1</li>
+                  <li class="tel"><a href="tel:+7 (977) 567-81-15">+7 (977) 567-81-15 </a></li>
+                  <li class="email"><a href="mailto:pro@teak.pro">pro@teak.pro</a></li>
+                  <li class="vk"><a href="#">vk.com/teakpro</a></li>
+                  <li class="fb"><a href="#">facebook.com/teakpro</a></li>
+                  <li class="inst"><a href="#">instagram.com/teakpro</a></li>
+                </ul>
+              </div>
+              <div class="contacts-page__rcol">
                 <div class="partners-form">
-                  <p class="partners-form__title">Стать партнёром</p>
-                  <p class="partners-form__text">Хотите сотрудничать с нами? Оставьте заявку и мы свяжемся с вами в ближайшее время.</p>
+                  <p class="partners-form__title">Обратная связь:</p>
                   <form>
                     <div class="partners-block__row">
                       <div class="inp-wrap">
@@ -81,6 +74,7 @@
               </div>
             </div>
           </div>
+          <div id="map" class="map"></div>
         </div>
       </main>
     </div>
@@ -106,5 +100,21 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtzbW15Ugk4belK7H5MvZKQGNSSmMVoj4"></script>
     <script src="js/lib/lib.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script>
+      var uluru = {lat: 55.683653, lng: 37.892988};
+      var map = new google.maps.Map(document.getElementById('map'), {
+      	zoom: 15,
+      	center: uluru
+      });
+      var marker = new google.maps.Marker({
+      	position: uluru,
+      	map: map
+      });
+      google.maps.event.addDomListener(window, "resize", function() {
+      	var center = map.getCenter();
+      	google.maps.event.trigger(map, "resize");
+      	map.setCenter(center); 
+      });
+    </script>
   </body>
 </html>

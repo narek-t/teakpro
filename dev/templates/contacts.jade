@@ -1,0 +1,55 @@
+extends _layout
+block content
+	main.main-content
+		.page-wrap
+			.container.cf
+				h1.page-title О компании
+				.contacts-page.cf
+					.contacts-page__lcol
+						p.partners-form__title Адрес:
+						ul.contacts-page__list
+							li.loc Россия, г. Люберцы, ул., Красная, 1, лит. Ц, Ц1
+							li.tel
+								a(href="tel:+7 (977) 567-81-15") +7 (977) 567-81-15 
+							li.email
+								a(href="mailto:pro@teak.pro") pro@teak.pro
+							li.vk
+								a(href="#") vk.com/teakpro
+							li.fb
+								a(href="#") facebook.com/teakpro
+							li.inst
+								a(href="#") instagram.com/teakpro
+					.contacts-page__rcol
+						.partners-form
+							p.partners-form__title Обратная связь:
+							form
+								.partners-block__row
+									.inp-wrap
+										input.simple-input(type="text" placeholder="Имя")
+									.inp-wrap
+										input.simple-input(type="tel" placeholder="Телефон")
+									.inp-wrap
+										input.simple-input(type="email" placeholder="Email")
+								span
+									textarea(placeholder="Комментарий")
+								input.btn.btn--gray(type="submit" value="Отправить")
+			#map.map
+
+
+
+block inlineScripts
+	script.
+		var uluru = {lat: 55.683653, lng: 37.892988};
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 15,
+			center: uluru
+		});
+		var marker = new google.maps.Marker({
+			position: uluru,
+			map: map
+		});
+		google.maps.event.addDomListener(window, "resize", function() {
+			var center = map.getCenter();
+			google.maps.event.trigger(map, "resize");
+			map.setCenter(center); 
+		});

@@ -1,0 +1,139 @@
+extends _layout
+block content
+	main.main-content
+		.page-wrap
+			.container.cf
+				.single-item
+					.single-item__slider
+						.single-big__slider
+							.slick-slide
+								img(src="img/single-big.jpg", alt="")
+							.slick-slide
+								img(src="img/single-big.jpg", alt="")
+							.slick-slide
+								img(src="img/single-big.jpg", alt="")
+							.slick-slide
+								img(src="img/single-big.jpg", alt="")
+							.slick-slide
+								img(src="img/single-big.jpg", alt="")
+							.slick-slide
+								img(src="img/single-big.jpg", alt="")
+							.slick-slide
+								img(src="img/single-big.jpg", alt="")
+							.slick-slide
+								img(src="img/single-big.jpg", alt="")
+							.slick-slide
+								img(src="img/single-big.jpg", alt="")
+							.slick-slide
+								img(src="img/single-big.jpg", alt="")
+							.slick-slide
+								img(src="img/single-big.jpg", alt="")
+							.slick-slide
+								img(src="img/single-big.jpg", alt="")
+						.single-thumb__slider
+							.slick-slide(style="background-image: url(img/single-big.jpg)")
+							.slick-slide(style="background-image: url(img/single-big.jpg)")
+							.slick-slide(style="background-image: url(img/single-big.jpg)")
+							.slick-slide(style="background-image: url(img/single-big.jpg)")
+							.slick-slide(style="background-image: url(img/single-big.jpg)")
+							.slick-slide(style="background-image: url(img/single-big.jpg)")
+							.slick-slide(style="background-image: url(img/single-big.jpg)")
+							.slick-slide(style="background-image: url(img/single-big.jpg)")
+							.slick-slide(style="background-image: url(img/single-big.jpg)")
+							.slick-slide(style="background-image: url(img/single-big.jpg)")
+							.slick-slide(style="background-image: url(img/single-big.jpg)")
+							.slick-slide(style="background-image: url(img/single-big.jpg)")
+
+					.single-item__description
+						h1.simple-heading Кровать Lorem ipsum
+						p.subheading lorem ipsum dolor 
+						p.description-heading.single-item__heading Описание:
+						p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+						p.chars.single-item__heading Характеристикики:
+						ul.chars__description 
+							li Lorem ipsum dolor sit amet
+							li Сonsectetur adipisicing
+							li Lorem ipsum dolor sit amet
+							li Сonsectetur adipisicing
+						.order-wrap.cf
+							a.order.btn.btn--gray.popup-with-move-anim(href="#popup") Заказать
+				.popular-items
+					.container
+						h2.simple-heading Популярные товары
+					.large-container
+						.popular__slider-item
+							.sl-prev.sl-arr
+							.sl-next.sl-arr
+							.tabbed__slider-inner
+								.small-block.fourth-block
+									a(href="#")
+										span.img-wrap(style="background-image: url(img/sm1.jpg)")
+										span.heading Стол Lorem ipsum
+										span.subheading lorem ipsum dolor 
+										span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing orem ipsum dolor sit amet, conse ctetur adipisi elit, sed do eiusmod tempor incididunt 
+								.small-block.fourth-block
+									a(href="#")
+										span.img-wrap(style="background-image: url(img/sm2.jpg)")
+										span.heading Стол Lorem ipsum
+										span.subheading lorem ipsum dolor 
+										span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+								.small-block.fourth-block
+									a(href="#")
+										span.img-wrap(style="background-image: url(img/sm1.jpg)")
+										span.heading Стол Lorem ipsum
+										span.subheading lorem ipsum dolor 
+										span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+								.small-block.fourth-block
+									a(href="#")
+										span.img-wrap(style="background-image: url(img/sm2.jpg)")
+										span.heading Стол Lorem ipsum
+										span.subheading lorem ipsum dolor 
+										span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt 
+								.small-block.fourth-block
+									a(href="#")
+										span.img-wrap(style="background-image: url(img/sm1.jpg)")
+										span.heading Стол Lorem ipsum
+										span.subheading lorem ipsum dolor 
+										span.small-text Lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eiusmod tempor incididunt
+		.zoom-anim-dialog.mfp-hide.popup#popup
+			.popup__row.cf
+				.popup__lcol
+					img(src="img/single-big.jpg", alt="")
+					p.title Кровать Lorem ipsum
+					p.subtitle lorem ipsum dolor 
+				.popup__rcol
+					p.title Оформить заказ
+					form
+						.popup__rcol-row
+							span
+								input(type="text" placeholder="Имя")
+							span
+								input(type="tel" placeholder="Телефон")
+						.popup__rcol-row
+							span
+								input(type="email" placeholder="Email")
+							span
+								input(type="text" placeholder="Город")
+						.popup__rcol-row
+							textarea(placeholder="Сообщение")
+						.popup__rcol-row.submit-row
+							.file-wrap
+								label прикрепить документ
+									input.file-inp(type="file")
+							input.btn.btn--gray(type="submit" value="Отправить")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+block inlineScripts

@@ -43,5 +43,32 @@ $(document).ready(function() {
         });
     });
 
+    $('.single-big__slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		asNavFor: '.single-thumb__slider',
+    });
+
+    $('.single-thumb__slider').slick({
+    	slidesToShow: 6,
+		slidesToScroll: 1,
+		asNavFor: '.single-big__slider',
+		focusOnSelect: true,
+		arrows: false,
+    });
+
+    $('.popup-with-move-anim').magnificPopup({
+      type: 'inline',
+      fixedContentPos: true,
+      fixedBgPos: true,
+      overflowY: 'auto',
+      closeBtnInside: true,
+      preloader: false,
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-slide-bottom'
+    });
+
 
 });
